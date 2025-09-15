@@ -16,7 +16,7 @@ describe("header", () => {
   });
 
   test("getApikey fails for invalid header", () => {
-    expect(getAPIKey(invalidHeader)).toBeTruthy();
+    expect(getAPIKey(invalidHeader)).toBeFalsy();
   });
 });
 
